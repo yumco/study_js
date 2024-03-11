@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function min (arry){
+        let output = arry[0]
+        for (const item of arry) {
+            //현재 output보다 더 작은 item 있다면 
+            if(output > item){
+            //output의 값을 item으로 변경
+            output = item
+        }
+    }
+        return output   
+}        
+
+
+
+const testArray = [52,273,32,103,275,24,57]
+console.log(`${testArray}중에서`)
+console.log(`최소값 = ${min(testArray)}`)
+</script>
+<body>
+    
+</body>
+</html>

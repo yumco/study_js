@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 변수를 선언합니다 
+    const date = new Date()
+    const hour = date.getHours()
+
+
+    // 중첩 조건문 
+    if( hour<11){
+        // 표현식이 <11 일때 실행 즉 11이 클때
+        alert('아침입니다')
+    }
+    else{
+        if(hour<=12)
+        alert('점심입니다')
+    }
+
+    if(hour<17){
+        alert('오후입니다')
+    }
+
+    else{
+        if(hour<18)
+        alert('저녁입니다')
+    }
+    
+</script>
+</html>
